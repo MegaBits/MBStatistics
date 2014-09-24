@@ -14,6 +14,8 @@
 		73EC642E19D3187100FBA053 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73EC642D19D3187100FBA053 /* Images.xcassets */; };
 		73EC643119D3187100FBA053 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EC642F19D3187100FBA053 /* LaunchScreen.xib */; };
 		73EC643D19D3187100FBA053 /* MBStatisticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EC643C19D3187100FBA053 /* MBStatisticsTests.m */; };
+		73EC644C19D318D600FBA053 /* MBStatDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EC644B19D318D600FBA053 /* MBStatDistribution.m */; };
+		73EC644D19D318D600FBA053 /* MBStatDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EC644B19D318D600FBA053 /* MBStatDistribution.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		73EC643619D3187100FBA053 /* MBStatisticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBStatisticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EC643B19D3187100FBA053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73EC643C19D3187100FBA053 /* MBStatisticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBStatisticsTests.m; sourceTree = "<group>"; };
+		73EC644A19D318D600FBA053 /* MBStatDistribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBStatDistribution.h; path = Source/MBStatDistribution.h; sourceTree = "<group>"; };
+		73EC644B19D318D600FBA053 /* MBStatDistribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBStatDistribution.m; path = Source/MBStatDistribution.m; sourceTree = "<group>"; };
+		73EC644E19D31D2E00FBA053 /* MBStatMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MBStatMacros.h; path = Source/MBStatMacros.h; sourceTree = "<group>"; };
+		73EC644F19D3250F00FBA053 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = MBStatistics/README.md; sourceTree = "<group>"; };
+		73EC645119D325C400FBA053 /* MBStatistics.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MBStatistics.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,9 @@
 		73EC641419D3187100FBA053 = {
 			isa = PBXGroup;
 			children = (
+				73EC645119D325C400FBA053 /* MBStatistics.podspec */,
+				73EC644F19D3250F00FBA053 /* README.md */,
+				73EC644919D3188D00FBA053 /* Source */,
 				73EC641F19D3187100FBA053 /* MBStatistics */,
 				73EC643919D3187100FBA053 /* MBStatisticsTests */,
 				73EC641E19D3187100FBA053 /* Products */,
@@ -117,6 +127,17 @@
 				73EC643B19D3187100FBA053 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73EC644919D3188D00FBA053 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				73EC644E19D31D2E00FBA053 /* MBStatMacros.h */,
+				73EC644A19D318D600FBA053 /* MBStatDistribution.h */,
+				73EC644B19D318D600FBA053 /* MBStatDistribution.m */,
+			);
+			name = Source;
+			path = MBStatistics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +242,7 @@
 			files = (
 				73EC642919D3187100FBA053 /* ViewController.m in Sources */,
 				73EC642619D3187100FBA053 /* AppDelegate.m in Sources */,
+				73EC644C19D318D600FBA053 /* MBStatDistribution.m in Sources */,
 				73EC642319D3187100FBA053 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73EC644D19D318D600FBA053 /* MBStatDistribution.m in Sources */,
 				73EC643D19D3187100FBA053 /* MBStatisticsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +437,7 @@
 				73EC644219D3187100FBA053 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73EC644319D3187100FBA053 /* Build configuration list for PBXNativeTarget "MBStatisticsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +446,7 @@
 				73EC644519D3187100FBA053 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
